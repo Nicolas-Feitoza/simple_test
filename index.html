@@ -20,6 +20,12 @@
       object-fit: cover;
       z-index: -1; /* Coloca o vídeo atrás do conteúdo */
     }
+
+    /* Animação para os botões */
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen py-10 relative text-white">
@@ -30,16 +36,15 @@
     Seu navegador não suporta o vídeo.
   </video>
 
-
   <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold text-center mb-12 text-white">Nossos Planos</h1>
+    <h1 class="text-5xl font-extrabold text-center mb-12 text-white">Nossos Planos</h1>
     
     <div class="flex flex-col md:flex-row items-center justify-center gap-8">
 
       <!-- Card - Basic -->
-      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105">
         <div class="bg-gradient-to-r from-indigo-700 to-indigo-900 p-6 text-white text-center">
-          <h2 class="text-2xl font-bold">Basic</h2>
+          <h2 class="text-2xl font-semibold">Basic</h2>
           <p class="text-4xl font-extrabold my-2">$19</p>
           <p class="text-sm">por mês</p>
         </div>
@@ -58,16 +63,16 @@
               Lorem ipsum dolor
             </li>
           </ul>
-          <button class="w-full py-3 bg-indigo-700 hover:bg-indigo-800 text-white font-semibold rounded-lg transition-colors">
+          <button class="btn w-full py-3 bg-indigo-700 hover:bg-indigo-800 text-white font-semibold rounded-lg transition-colors">
             Assinar
           </button>
         </div>
       </div>
 
       <!-- Card - Standard -->
-      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105">
         <div class="bg-gradient-to-r from-teal-600 to-teal-800 p-6 text-white text-center">
-          <h2 class="text-2xl font-bold">Standard</h2>
+          <h2 class="text-2xl font-semibold">Standard</h2>
           <p class="text-4xl font-extrabold my-2">$39</p>
           <p class="text-sm">por mês</p>
         </div>
@@ -86,16 +91,16 @@
               Lorem ipsum dolor
             </li>
           </ul>
-          <button class="w-full py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors">
+          <button class="btn w-full py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors">
             Assinar
           </button>
         </div>
       </div>
 
       <!-- Card - Premium -->
-      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+      <div class="flex flex-col w-full md:w-1/3 bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform transform hover:scale-105">
         <div class="bg-gradient-to-r from-yellow-600 to-yellow-800 p-6 text-white text-center">
-          <h2 class="text-2xl font-bold">Premium</h2>
+          <h2 class="text-2xl font-semibold">Premium</h2>
           <p class="text-4xl font-extrabold my-2">$59</p>
           <p class="text-sm">por mês</p>
         </div>
@@ -114,7 +119,7 @@
               Lorem ipsum dolor
             </li>
           </ul>
-          <button class="w-full py-3 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-colors">
+          <button class="btn w-full py-3 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-colors">
             Assinar
           </button>
         </div>
